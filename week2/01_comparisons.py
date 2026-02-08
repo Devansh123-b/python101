@@ -1,5 +1,5 @@
 # Filename: 01_comparisons.py
-# Python101 - Lesson 2: Comparisons (True/False)
+# Python101 - Week 2: Comparisons (True/False)
 
 print("=== Comparisons ===")
 
