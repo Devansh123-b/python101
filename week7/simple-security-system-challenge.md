@@ -5,7 +5,7 @@ In this project, you will build a **simple security login system** using Python.
 Your program will:
 - Ask for a username
 - Check if the user is authorized
-- Generate a **random 4-digit security code**
+- Generate a **random 2-digit security code between 10 and 20**
 - Allow **3 attempts** to unlock the system
 
 This project uses:
@@ -75,12 +75,12 @@ Security verification required
 
 # 4. Generate a 4-digit security code
 
-Create a random number between **1000 and 9999**.
+Create a random number between **10 and 20**.
 
 Example:
 
 ```python
-code = random.randint(1000, 9999)
+code = random.randint(10, 20)
 ```
 
 ---
@@ -115,7 +115,7 @@ while attempts > 0 and system_unlocked == False:
 
 Inside the loop:
 
-* Ask the user to enter the **4-digit code**
+* Ask the user to enter the **2-digit code between 10 and 20**
 * Convert the input to an integer
 
 Example idea:
@@ -174,15 +174,15 @@ Enter your name: ADMIN
 Welcome Admin
 Security verification required
 
-Enter the 4-digit code: 1234
+Enter the 2-digit code: 15
 Incorrect code
 Attempts remaining: 2
 
-Enter the 4-digit code: 8888
+Enter the 2-digit code: 19
 Incorrect code
 Attempts remaining: 1
 
-Enter the 4-digit code: 4572
+Enter the 2-digit code: 11
 Access Granted
 System Unlocked
 ```
