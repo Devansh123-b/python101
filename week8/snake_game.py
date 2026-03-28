@@ -81,7 +81,7 @@ def update_score():
     """Redraw the score line at the top."""
     score_turtle.clear()
     score_turtle.write(
-        f"Score: {score}   High Score: {high_score}",
+        "Score: {}   High Score: {}".format(score, high_score),
         align="center",
         font=("Arial", 14, "bold")
     )
@@ -190,7 +190,7 @@ def show_game_over():
     )
     game_over_turtle.goto(0, -10)
     game_over_turtle.write(
-        f"Final Score: {score}",
+        "Final Score: {}".format(score),
         align="center",
         font=("Arial", 20, "normal")
     )
