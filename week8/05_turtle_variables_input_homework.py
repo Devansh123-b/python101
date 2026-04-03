@@ -1,17 +1,22 @@
-# Python101 - Turtle Lesson 5 (HOMEWORK): Variables + User Input
-
-# GOAL: Make your turtle program interactive using variables and input().
-#
-# New concepts in this file:
-#   - Storing values in variables (size, color, sides)
-#   - Using input() to ask the user a question
-#   - int() to convert text input into a number
-#   - Using a variable inside t.forward() and t.right()
-#
-# The 360° formula for any polygon:
-#   angle = 360 / number_of_sides
-#
-# EXAMPLE: A shape-drawing program where the user picks the sides and size.
+t = turtle.Turtle()
+t.speed(5)
+t.penup()
+t.goto(-200,0)
+t.pendown()
+for i in range(3):
+ t.penup()
+ t.forward(60)
+ t.pendown()
+ t.color(color)
+ t.begin_fill()
+ t.fillcolor(fill)
+ t.begin_fill()
+ for i in range(sides):
+    t.forward(size)
+    t.right(angle)
+ t.end_fill()
+t.hideturtle()
+turtle.done()
 
 import turtle
 
