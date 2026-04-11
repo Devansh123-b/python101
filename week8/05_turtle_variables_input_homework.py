@@ -1,3 +1,11 @@
+import turtle
+#Challenge A&B
+sides = int(input("How many sides? (3 = triangle, 4 = square, 5 = pentagon...): "))
+size  = int(input("How long should each side be? (try 50 to 200): "))
+color = input("What color? (red, blue, green, purple, orange...): ")
+fill = input("what color to fill the shape with? (red, blue, green, purple, orange...): ")
+# --- Calculate the turning angle ---
+angle = 360 / sides   # the 360° rule
 t = turtle.Turtle()
 t.speed(5)
 t.penup()
@@ -18,27 +26,36 @@ for i in range(3):
 t.hideturtle()
 turtle.done()
 
-import turtle
 
+#Challenge C
+# name: devansh
 # --- Ask the user for input ---
 sides = int(input("How many sides? (3 = triangle, 4 = square, 5 = pentagon...): "))
 size  = int(input("How long should each side be? (try 50 to 200): "))
 color = input("What color? (red, blue, green, purple, orange...): ")
-
+fill = input("what color to fill the shape with? (red, blue, green, purple, orange...): ")
 # --- Calculate the turning angle ---
 angle = 360 / sides   # the 360° rule
 
 # --- Draw the shape ---
 t = turtle.Turtle()
 t.speed(5)
-t.color(color)
-t.begin_fill()
-
-for i in range(sides):
+t.penup()
+t.goto(-200,0)
+t.pendown()
+for i in range(6):
+ t.penup()
+ t.forward(1)
+ t.pendown()
+ t.color(color)
+ t.begin_fill()
+ t.fillcolor(fill)
+ t.begin_fill()
+ for r in range(sides):
     t.forward(size)
     t.right(angle)
-
-t.end_fill()
+ t.end_fill()
+ t.left(angle/2)
 t.hideturtle()
 turtle.done()
 
