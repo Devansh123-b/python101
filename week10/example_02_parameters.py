@@ -14,9 +14,9 @@
 def greet_student(name):
     print("Hi,", name + "! Ready to learn Python?")
 
-greet_student("Alice")
-greet_student("Bob")
-greet_student("Carlos")
+greet_student("Soliman")
+greet_student("Devansh")
+greet_student("Ashaz")
 
 print("---")
 
