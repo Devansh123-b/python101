@@ -17,10 +17,13 @@
 # Then CALL the function so it runs.
 # ------------------------------------------------------------
 
-# 👉 Write your function definition here:
+# Section 1: Task 1
+def print_banner():
+    print("*"*20)
+    print("*  I Love Python!  *")
+    print("*"*20)
 
-
-# 👉 Call your function here:
+print_banner()
 
 
 # ------------------------------------------------------------
@@ -31,11 +34,15 @@
 # Then call it TWICE.
 # ------------------------------------------------------------
 
-# 👉 Write your function definition here:
+# Section 2: Task 2
+def print_favourite_things():
+    print("- making games")
+    print("- making jokes")
+    print("- and playing video games")
+    print("-" * 15)
 
-
-# 👉 Call your function twice here:
-
+print_favourite_things()
+print_favourite_things()
 
 # ------------------------------------------------------------
 # TASK 3
@@ -45,11 +52,12 @@
 # Then call it.
 # ------------------------------------------------------------
 
-# 👉 Write your function definition here:
+# Section 3: Task 3
+def count_to_ten():
+    for i in range(1, 11):
+        print(i)
 
-
-# 👉 Call your function here:
-
+count_to_ten()
 
 # ============================================================
 # CHALLENGE (optional, for extra fun!)
@@ -62,4 +70,8 @@
 # Hint: use a for loop and string multiplication ("*" * n)
 # ============================================================
 
-# 👉 Write your challenge function here (optional):
+def print_star_triangle():
+    for i in range(1, 6):
+        print("*" * i)
+
+print_star_triangle()
