@@ -25,12 +25,11 @@
 #   - a friend's name and age
 # ------------------------------------------------------------
 
-# 👉 Write your function here:
-
-
-# 👉 Call it twice here:
-
-
+#Section 1: Task 1 
+def introduce(name,age):
+  print("my name is ",name,"and I am",age,"years old")
+introduce("Devansh", 11)
+introduce("Hanse", 12)
 # ------------------------------------------------------------
 # TASK 2
 # Define a function called "print_rectangle" that takes
@@ -46,10 +45,15 @@
 # Hint: print("#" * width)  prints "####" when width is 4
 # ------------------------------------------------------------
 
-# 👉 Write your function here:
+#Section 2: Task 2
+def print_rectangle(height,width): 
+ for i in range(height):
+  print("#" * width)
 
-
-# 👉 Test it with at least 3 different width/height values:
+print_rectangle(4, 5)
+print_rectangle(2, 10)
+print_rectangle(6, 3)
+print_rectangle(3, 7)
 
 
 # ------------------------------------------------------------
@@ -65,10 +69,25 @@
 # Call it with temperatures: -5, 10, 20, 35
 # ------------------------------------------------------------
 
-# 👉 Write your function here:
+#Section 3: Task 3
+def temperature_message(temp):
+  if temp < 0:
+    print("It's freezing!")
+  elif temp < 15:
+    print("It's cold!")
+  elif temp < 25:
+    print("It's warm!")
+  else:
+    print("It's hot!")
 
-
-# 👉 Call it four times here:
+temperature_message(-5)
+print("")
+temperature_message(10)
+print("")
+temperature_message(20)
+print("")
+temperature_message(35)
+print("")
 
 
 # ============================================================
@@ -79,4 +98,11 @@
 # Call it with three different pairs of numbers.
 # ============================================================
 
-# 👉 Write your challenge function here (optional):
+#Section 4: CHALLENGE
+def multiply_and_describe(n1,n2):
+  sum = n1 * n2
+  print("",n1,"multiplied by",n2,"equals",sum)
+  print("-" * 20)
+multiply_and_describe(3, 4)
+multiply_and_describe(5, 6)
+multiply_and_describe(7, 8)
