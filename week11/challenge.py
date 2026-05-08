@@ -118,7 +118,15 @@ print("=" * 50)
 #       anything else → 0
 # ------------------------------------------------------------
 
-# 👉 Write get_base_price here:
+def get_base_price(size):
+    if size == "small":
+        return 8
+    elif size == "medium":
+        return 12
+    elif size == "large":
+        return 16
+    else:
+        return 0
 
 
 # ------------------------------------------------------------
@@ -129,7 +137,9 @@ print("=" * 50)
 #     (each topping costs 1.50)
 # ------------------------------------------------------------
 
-# 👉 Write add_toppings_cost here:
+def add_toppings_cost(num_toppings):
+    return num_toppings * 1.5
+
 
 
 # ------------------------------------------------------------
@@ -141,7 +151,10 @@ print("=" * 50)
 # Hint: round(result, 2) rounds to 2 decimal places
 # ------------------------------------------------------------
 
-# 👉 Write apply_tax here:
+def apply_tax(subtotal):
+    tax_rate = 0.13  # 13%
+    return subtotal * tax_rate
+
 
 
 # ------------------------------------------------------------
@@ -172,7 +185,27 @@ print("=" * 50)
 # Hint: "$" + str(price) puts a dollar sign in front
 # ------------------------------------------------------------
 
-# 👉 Write print_order here (it must call all three helpers!):
+
+def print_order(name=None):
+
+    size = input("What is your desired size of pizza? (small, medium, large) ").lower()
+    num_toppings = int(input("How many toppings would you like? "))
+    
+    base_price = get_base_price(size)
+    toppings_cost = add_toppings_cost(num_toppings)
+    subtotal = base_price + toppings_cost
+    tax = apply_tax(subtotal)
+    total = subtotal + tax
+    
+    print("==============================")
+    print("PIZZA ORDER")
+    print("==============================")
+    print(f"Customer: {name}")
+    print(f"Size: {size}")
+    print(f"Toppings: {num_toppings}")
+    print(f"Subtotal: ${subtotal:.2f}")
+    print(f"Total: ${total:.2f}")
+
 
 
 # ------------------------------------------------------------
@@ -182,10 +215,9 @@ print("=" * 50)
 # Make sure you try different sizes so all three prices appear.
 # ------------------------------------------------------------
 
-# 👉 Call print_order for customer 1:
+print_order("David")
 
-
-# 👉 Call print_order for customer 2:
+print_order("Emma")
 
 
 # ------------------------------------------------------------
