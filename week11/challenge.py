@@ -33,7 +33,9 @@
 # Hint: round(result, 1) rounds to 1 decimal place
 # ------------------------------------------------------------
 
-# 👉 Write celsius_to_fahrenheit here:
+def celsius_to_fahrenheit(celsius):
+    result = (celsius * 9/5) + 32
+    return round(result, 1)
 
 
 # ------------------------------------------------------------
@@ -45,7 +47,9 @@
 # Hint: round(result, 1) rounds to 1 decimal place
 # ------------------------------------------------------------
 
-# 👉 Write fahrenheit_to_celsius here:
+def fahrenheit_to_celsius(fahrenheit):
+    result = (fahrenheit - 32) * 5/9
+    return round(result, 1)
 
 
 # ------------------------------------------------------------
@@ -59,18 +63,10 @@
 #   98.6 F = 37.0 C
 # ------------------------------------------------------------
 
-# 👉 Print celsius_to_fahrenheit(0)   — expected: 32.0
-
-
-# 👉 Print celsius_to_fahrenheit(100) — expected: 212.0
-
-
-# 👉 Print fahrenheit_to_celsius(32)  — expected: 0.0
-
-
-# 👉 Print fahrenheit_to_celsius(98.6) — expected: 37.0
-
-
+print(celsius_to_fahrenheit(0))  # Output: 32.0
+print(celsius_to_fahrenheit(100))  # Output: 212.0
+print(fahrenheit_to_celsius(32))   # Output: 0.0
+print(fahrenheit_to_celsius(98.6))  # Output: 37.0
 print("---")
 
 
